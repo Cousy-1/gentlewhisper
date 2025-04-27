@@ -134,9 +134,14 @@ body {
   text-align: left;
   animation: textGradient 4s ease infinite;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
 .font-serif {
   font-family: 'Georgia', 'Times New Roman', serif;
+}
+.spaced-section {
+  margin-top: 2.5rem; /* Equivalent to mt-10 */
+  margin-bottom: 2.5rem; /* Equivalent to mb-10 */
 }

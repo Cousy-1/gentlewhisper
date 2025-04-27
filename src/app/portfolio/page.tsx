@@ -1,18 +1,17 @@
 'use client';
 
 import { Card, CardContent } from '@/components/ui/card';
-//import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button';
 import { Rocket, Code, Smartphone } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { FaInstagram, FaLinkedin, FaStar, FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
 import InfiniteCarousel from '@/components/InfiniteCarousel';
-//import Footer from '@/components/Footer';
+import FactsSidebar from '@/components/FactsSidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-//import FactsSidebar from '@/components/FactsSidebar';
-
+import Footer from '@/components/Footer';
 
 export default function Portfolio() {
   return (
@@ -82,13 +81,29 @@ export default function Portfolio() {
         </Card>
       </div>
 
-        {/* Gentle Whisper's Story */}
+        <br></br>{/* Gentle Whisper's Story */}
+       
+<div className="flex flex-row space-x-4">
+  <Button 
+   onClick={() => window.location.href = "https://wa.me/254715094638"} 
+   className="bg-red-600 hover:bg-red-700 text-white font-semibold py-1 px-3 rounded-full text-sm"
+ >
+   WhatsApp Now
+  </Button>
+  <Button 
+    onClick={() => console.log("Button clicked!")} 
+    className="bg-red-600 hover:bg-red-700 text-white font-semibold py-1 px-3 rounded-full text-sm"
+  >
+    Resume
+  </Button>
+</div>
+
         <p className="text-center text-gray-300 mb-20 font-serif text-base sm:text-lg lg:text-xl leading-relaxed tracking-wide animate-textGradient">
- Hi, did you know?<br />
+<br></br> Hi, did you know?<br />
   Gentle Whisper is the embodiment of self-drive and determination, always pushing forward with a quiet yet powerful resolve. <br />
   He thrives on taking initiative, never waiting for direction but instead forging his own path toward innovation. <br />
   With an unwavering passion for continuous learning, he stays ahead of the curve, mastering new skills with ease. His ability to face challenges head-on, always seeking solutions, sets him apart as a true problem solver. <br />
-  Gentle Whisper doesn’t just adapt to change—he leads it, inspiring others with his quiet strength and resilience.
+  Gentle Whisper doesn’t just adapt to change, he leads it, inspiring others with his quiet strength and resilience.
 </p>
 
       {/* Featured Projects */}
@@ -158,6 +173,10 @@ export default function Portfolio() {
           <FontAwesomeIcon icon={faWhatsapp} className="text-3xl" />
           <span className="sr-only">Contact me on WhatsApp</span>
         </a>
+        <Footer />
+        <FactsSidebar />
+       
+
       </div>
     </div>
   );

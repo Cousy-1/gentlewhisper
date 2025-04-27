@@ -35,13 +35,14 @@ export default function InfiniteCarousel() {
         {duplicated.map((project, index) => (
           <Card key={index} className="min-w-[300px] bg-gray-800 border border-cyan-600">
             <CardContent className="p-4">
-              <Image
-                src={project.src} // ✅ Corrected from project.img
-                alt={project.title}
-                width={500}
-                height={300}
-                className="rounded-lg object-cover"
-              />
+<Image
+  src="/project1.jpg" // ✅ valid path
+  alt="test"
+  width={500}
+  height={300}
+  unoptimized // 🧙 disables automatic image optimization, useful for debugging
+  className="rounded-lg object-cover"
+/>
               <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
               <p className="text-gray-300 text-sm mt-2">{project.desc}</p>
             </CardContent>
