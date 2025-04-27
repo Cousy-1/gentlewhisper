@@ -1,17 +1,17 @@
 'use client';
 
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+//import { Button } from '@/components/ui/button';
 import { Rocket, Code, Smartphone } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { FaInstagram, FaLinkedin, FaStar, FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
 import InfiniteCarousel from '@/components/InfiniteCarousel';
-import Footer from '@/components/Footer';
+//import Footer from '@/components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import FactsSidebar from '@/components/FactsSidebar';
+//import FactsSidebar from '@/components/FactsSidebar';
 
 
 export default function Portfolio() {
